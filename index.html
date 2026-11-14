@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artemis · Denunciar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Artemis</h1>
+    <p class="slogan">Quem não tem voz, tem a Artemis.</p>
+  </header>
+
+  <main class="cartao">
+    <h2>Denunciar sem medo</h2>
+    <p class="aviso">Sem login, sem nome. Seus dados ficam protegidos.</p>
+
+    <form id="form-denuncia">
+      <label for="tipo">O que aconteceu?</label>
+      <select id="tipo" required>
+        <option value="">Escolha uma opção</option>
+        <option>Maus-tratos</option>
+        <option>Abandono</option>
+        <option>Animal ferido</option>
+      </select>
+
+      <label for="local">Onde e quando aconteceu?</label>
+      <input id="local" type="text" placeholder="Rua X, Centro, ontem à noite" required>
+
+      <label for="descricao">Conte o que viu</label>
+      <textarea id="descricao" rows="4" placeholder="Descreva o caso com o máximo de detalhes" required></textarea>
+
+      <button type="submit">Enviar denúncia</button>
+    </form>
+
+    <div id="resultado" class="resultado escondido">
+      <p>Recebido. Guarde seu protocolo:</p>
+      <p id="protocolo" class="protocolo"></p>
+      <p class="aviso">Use este código para acompanhar o caso.</p>
+    </div>
+  </main>
+
+  <footer class="rodape">Projeto Artemis · Proteção · Cuidado · Verdade · Segurança</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
